@@ -37,7 +37,7 @@ npm start
 #
 ## Arquitetura do projeto **(Versão 1)**
 
-![image](https://user-images.githubusercontent.com/53583561/159534763-3189aeb8-1ed3-4199-a2dd-100bb9fddaf8.png)
+![image](https://user-images.githubusercontent.com/53583561/162639253-370ed47b-9a84-49f6-af3f-f2eb1f0deb81.png)
 
 
 #
