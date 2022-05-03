@@ -3,6 +3,8 @@ import Menu from "../components/Menu";
 
 import imgLateral from "../html-css-template/imagens/half-circles-pink-blue.png";
 
+import api from "../api";
+
 function Adicionar() {
 
   const [musicaInput, setMusicaInput] = useState("");
@@ -13,7 +15,22 @@ function Adicionar() {
 
   function cadastrar(e) {
     e.preventDefault();
-    console.log(musicaInput);
+
+    const objMusica = {
+      musica: musicaInput,
+      artista: artistaInput,
+      categoria: generoInput,
+      ano: anoInput,
+      imagem: imagemInput
+    }
+
+    api.post("/", objMusica).then(res => {
+      alert("Cadastrada com sucesso!");
+    }).catch(erro => {
+      alert("Deu ruim!");
+      console.log(erro);
+    })
+
   }
 
   return (
